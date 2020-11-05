@@ -37,7 +37,7 @@ context('Connectors', function () {
     const arr = ['foo', 'bar', 'baz'];
 
     cy.wrap(arr).spread((foo, bar, baz) => {
-      expect(foo).to.eq('foo');
+      expect(foo).to.eq('bar');
       expect(bar).to.eq('bar');
       expect(baz).to.eq('baz');
     });
